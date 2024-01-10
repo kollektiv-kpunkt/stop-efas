@@ -23,10 +23,6 @@ function efas_acf() {
             register_block_type( $block );
         });
     }
-
-    if ($_ENV["APP_ENV"] === "production") {
-        add_filter('acf/settings/show_admin', '__return_false');
-    }
 }
 
 efas_acf();

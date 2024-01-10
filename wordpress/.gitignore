@@ -51,4 +51,8 @@ wp-config.php
 ## Stop EFAS
 /auth.json
 /vendor/
-*.DS_Store    
+*.DS_Store
+/wp-content/backups-dup-lite/*
+/wp-content/upgrade/*
+/wp-content/*
+!/wp-content/themes/
