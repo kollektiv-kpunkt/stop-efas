@@ -1,0 +1,9 @@
+.efas-details-toggle__content {
+    max-height: unset !important;
+    padding: 1rem;
+    border: dashed 1px #ccc;
+}
+
+.efas-details-toggle {
+    width: 100%;
+}

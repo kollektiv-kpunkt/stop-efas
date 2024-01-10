@@ -1,0 +1,15 @@
+{
+    "name": "efas/details",
+    "title": "Details toggle",
+    "description": "Details toggle",
+    "category": "theme",
+    "icon": "",
+    "keywords": [
+        "details",
+        "toggle"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "layout.php"
+    }
+}

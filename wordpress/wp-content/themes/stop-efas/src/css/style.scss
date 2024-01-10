@@ -1,0 +1,10 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./base.scss";
+@import "./typography.scss";
+@import "./elements/style.scss";
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,15 @@
+{
+    "name": "kollektiv-kpunkt/stop-efas",
+    "description": "Theme for the campaign against the EFAS law.",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "Timothy from K",
+            "email": "timothy@kpunkt.ch"
+        }
+    ]
+}

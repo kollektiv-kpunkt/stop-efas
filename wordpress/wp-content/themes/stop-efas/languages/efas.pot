@@ -1,0 +1,99 @@
+# Copyright (C) 2024 Timothy@K.
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Stop EFAS 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/efas\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-09T16:19:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: efas\n"
+
+#. Theme Name of the theme
+msgid "Stop EFAS"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/kollektiv-kpunkt/stop-efas"
+msgstr ""
+
+#. Description of the theme
+msgid "Theme for the campaign against the EFAS law."
+msgstr ""
+
+#. Author of the theme
+msgid "Timothy@K."
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://kpunkt.ch"
+msgstr ""
+
+#: inc/inc.themesupports.php:11
+msgid "Accent Color"
+msgstr ""
+
+#: inc/inc.themesupports.php:16
+msgid "Accent Color half"
+msgstr ""
+
+#: inc/inc.themesupports.php:21
+msgid "Foreground Color"
+msgstr ""
+
+#: inc/inc.themesupports.php:26
+msgid "Foreground Color half"
+msgstr ""
+
+#: inc/inc.themesupports.php:31
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/inc.themesupports.php:36
+msgid "Tertiary Color"
+msgstr ""
+
+#: inc/inc.themesupports.php:41
+msgid "White"
+msgstr ""
+
+#: inc/inc.themesupports.php:47
+msgid "Small"
+msgstr ""
+
+#: inc/inc.themesupports.php:52
+msgid "Medium"
+msgstr ""
+
+#: inc/inc.themesupports.php:57
+msgid "Large"
+msgstr ""
+
+#: inc/inc.themesupports.php:62
+msgid "X-Large"
+msgstr ""
+
+#: inc/inc.themesupports.php:67
+msgid "2x-Large"
+msgstr ""
+
+#: inc/inc.themesupports.php:74
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/inc.themesupports.php:75
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/inc.themesupports.php:76
+msgid "Social Media Menu"
+msgstr ""
+
+#: inc/inc.themesupports.php:82
+msgid "Error loading textdomain for theme \"efas\""
+msgstr ""

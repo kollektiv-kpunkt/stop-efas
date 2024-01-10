@@ -1,0 +1,14 @@
+.efas-details-toggle {
+
+    &__title {
+        @apply px-4 py-3 bg-white flex justify-between items-center cursor-pointer;
+
+        p {
+            font-family: "Anton", sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+}

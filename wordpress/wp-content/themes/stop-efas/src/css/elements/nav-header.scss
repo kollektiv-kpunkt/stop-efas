@@ -1,0 +1,27 @@
+.efas-nav-header {
+    .wp-block-navigation-item {
+        border-bottom: 4px solid white;
+        background-image: linear-gradient(to right, white 0, white 100%);
+        background-size: 100% 0%;
+        background-repeat: repeat-x;
+        background-position: bottom;
+        transition: background-size 0.1s ease-in-out;
+        @apply px-3 pt-1;
+
+        &:hover {
+            background-size: 100% calc(100% + 4px);
+
+            a {
+                color: theme("colors.primary");
+            }
+        }
+
+        a {
+            transition: color 0.1s ease-in-out;
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    }
+}
