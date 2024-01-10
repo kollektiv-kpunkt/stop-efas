@@ -29,3 +29,12 @@
         'GRAD' 0,
         'opsz' 24
 }
+
+
+p {
+    margin: 0;
+
+    &+p {
+        margin-top: 1em;
+    }
+}

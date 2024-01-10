@@ -18,7 +18,9 @@
         </div>
     </div>
     <div class="efas-details-toggle__content max-h-0 overflow-hidden">
-        <InnerBlocks />
+        <div class="efas-details-toggle__content-inner">
+            <InnerBlocks />
+        </div>
     </div>
 </div>
 

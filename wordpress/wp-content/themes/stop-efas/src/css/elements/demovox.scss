@@ -40,6 +40,10 @@ form.demovox {
         &#demovox-grp-swiss_abroad {
             @apply col-span-2;
         }
+
+        @media (max-width: 639px) {
+            @apply col-span-2;
+        }
     }
 
     .form-row {
@@ -47,6 +51,7 @@ form.demovox {
         @apply col-span-2 flex;
 
         .form-group {
+            box-sizing: border-box;
             @apply flex-1;
 
             &#demovox-grp-gde_canton {
@@ -55,6 +60,10 @@ form.demovox {
                     @apply block w-full;
                 }
             }
+        }
+
+        @media (max-width: 639px) {
+            @apply flex-col gap-4;
         }
     }
 

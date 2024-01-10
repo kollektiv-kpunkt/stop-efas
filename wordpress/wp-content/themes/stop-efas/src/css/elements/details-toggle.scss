@@ -11,4 +11,8 @@
             margin: 0;
         }
     }
+
+    &__content-inner {
+        @apply bg-white px-4 pt-1 pb-3;
+    }
 }
