@@ -1,7 +1,9 @@
 window.addEventListener("click", function (e) {
     let toggle = e.target.closest(".efas-details-toggle");
+    let content = e.target.closest(".efas-details-toggle__content");
     if (!toggle) return;
-    let content = toggle.querySelector(".efas-details-toggle__content");
+    if (content) return;
+    content = toggle.querySelector(".efas-details-toggle__content");
     let inner = content.querySelector(".acf-innerblocks-container");
     let icon = toggle.querySelector(".efas-details-toggle__icon");
     if (!content) return;
