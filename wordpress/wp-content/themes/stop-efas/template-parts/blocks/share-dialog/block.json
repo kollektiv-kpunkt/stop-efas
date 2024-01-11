@@ -1,0 +1,15 @@
+{
+    "name": "efas/share-dialog",
+    "title": "Share Dialog",
+    "description": "Share dialog for the efas theme",
+    "category": "theme",
+    "icon": "",
+    "keywords": [
+        "share",
+        "dialog"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "layout.php"
+    }
+}

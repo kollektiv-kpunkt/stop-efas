@@ -7,3 +7,19 @@
 .efas-details-toggle {
     width: 100%;
 }
+
+.efas-share-dialog--box .efas-share-dialog__wrapper {
+    position: relative !important;
+    height: auto !important;
+    opacity: 0.75 !important;
+    visibility: visible !important;
+}
+
+.efas-share-dialog--box .efas-share-dialog__wrapper::before {
+    content: "Will be displayed as a popup on the page, opens when a link with the URL #share-popup is clicked.";
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    color: white;
+    font-size: 0.5rem;
+}

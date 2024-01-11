@@ -1,0 +1,80 @@
+.efas-share-dialog {
+
+    &--box {
+
+        .efas-share-dialog__wrapper {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+            @apply bg-black bg-opacity-75 fixed top-0 left-0 w-full h-full flex flex-col z-50 m-0 overflow-y-auto;
+
+            .efas-share-dialog__outer {
+                @apply py-8 px-6 m-auto overflow-hidden;
+
+                .efas-share-dialog__inner {
+                    @apply bg-white max-w-xl p-6 mx-auto;
+
+                    .efas-share-dialog__close {
+                        transform: translate(50%, -50%);
+                        @apply w-8 h-8 flex justify-center items-center rounded-full bg-highlight top-0 right-0 absolute cursor-pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .efas-share-dialog__close {
+        display: none;
+    }
+
+
+    &--no-text {
+
+        h2,
+        p {
+            display: none;
+        }
+    }
+
+
+    &--inline {
+
+        --title-bg-color: #ff0003;
+        --title-text-color: #ffffff;
+        --text-color: #000000;
+        --button-bg-color: #fff000;
+        --button-text-color: #000000;
+
+        &.efas-share-dialog--light {
+            --title-bg-color: #ffffff;
+            --title-text-color: #ff0003;
+            --text-color: #ffffff;
+            --button-bg-color: #ffffff;
+            --button-text-color: #ff0003;
+        }
+
+        &.efas-share-dialog--dark {
+            --title-bg-color: #000000;
+            --title-text-color: #ffffff;
+            --text-color: #000000;
+            --button-bg-color: #000000;
+            --button-text-color: #fff000;
+        }
+
+        h2 span {
+            background-color: var(--title-bg-color);
+            color: var(--title-text-color);
+            -webkit-box-shadow: 0.16em 0 0 var(--title-bg-color) -0.16em 0 0 var(--title-bg-color);
+            box-shadow: 0.16em 0 0 var(--title-bg-color), -0.16em 0 0 var(--title-bg-color);
+        }
+
+        p {
+            color: var(--text-color);
+        }
+
+        .wp-block-button .wp-block-button__link {
+            background-color: var(--button-bg-color) !important;
+            color: var(--button-text-color) !important;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "key": "group_659fca0ce9edd",
+    "title": "Block: Share dialog",
+    "fields": [
+        {
+            "key": "field_659fca0de2862",
+            "label": "Share Text",
+            "name": "share_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_659fca24e2863",
+            "label": "Share URL",
+            "name": "share_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\/",
+            "placeholder": ""
+        },
+        {
+            "key": "field_659fca44e1656",
+            "label": "Display Type",
+            "name": "display_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "efas-share-dialog--box": "Dialog Box",
+                "efas-share-dialog--inline": "Inline"
+            },
+            "default_value": "efas-share-dialog-box",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_659fd1b649059",
+            "label": "Display color",
+            "name": "display_color",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_659fca44e1656",
+                        "operator": "==",
+                        "value": "efas-share-dialog--inline"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "efas-share-dialog--light": "Light",
+                "efas-share-dialog--dark": "Dark",
+                "efas-share-dialog--accent": "Accent color"
+            },
+            "default_value": "efas-share-dialog--accent",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_659fd32cf56ee",
+            "label": "Display Title and text",
+            "name": "display_text",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_659fca44e1656",
+                        "operator": "==",
+                        "value": "efas-share-dialog--inline"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "efas-share-dialog--show-text": "Yes",
+                "efas-share-dialog--no-text": "No"
+            },
+            "default_value": "efas-share-dialog--no-text",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "efas\/share-dialog"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704973140
+}
