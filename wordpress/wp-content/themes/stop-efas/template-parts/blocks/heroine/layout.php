@@ -15,7 +15,7 @@ if (!isset($_COOKIE["efas-heroine"])) {
 ?>
 
 <div class="efas-heroine-wrapper bg-primary<?= $heroineclass ?>">
-    <div class="efas-heroine-inner py-6 px-6 max-w-[620px] w-full mx-auto">
+    <div class="efas-heroine-inner py-6 px-6 max-w-[620px] w-full mx-auto box-border">
         <div class="efas-logo-canvas aspect-[620/415] ">
             <?php
             $elements = [
