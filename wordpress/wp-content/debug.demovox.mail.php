@@ -36,3 +36,8 @@ Mailer is configured to use method "smtp"
 2024-01-11 14:25:28 [error] /var/www/html/wp-includes/class-wp-hook.php:324
 Mailer: Message body empty
 
+2024-01-11 15:21:39 [notice] /var/www/html/wp-includes/class-wp-hook.php:324
+Mailer is configured to use method "smtp"
+2024-01-11 15:21:39 [error] /var/www/html/wp-includes/class-wp-hook.php:324
+Mailer: Message body empty
+

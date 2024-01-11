@@ -1,0 +1,13 @@
+.efas-language-switcher {
+    border: 2px solid white;
+    border-radius: 100%;
+    @apply fixed bottom-4 right-4 h-8 w-8;
+
+    .material-symbols-outlined {
+        @apply text-2xl leading-none absolute z-50 bg-primary text-white w-8 h-8 flex justify-center items-center rounded-full cursor-pointer;
+    }
+
+    &__lang {
+        @apply absolute h-8 w-8 rounded-full flex justify-center items-center bg-highlight text-black;
+    }
+}
