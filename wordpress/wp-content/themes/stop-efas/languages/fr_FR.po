@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Stop EFAS\n"
 "POT-Creation-Date: 2024-01-11 15:22+0100\n"
-"PO-Revision-Date: 2024-01-11 15:23+0100\n"
+"PO-Revision-Date: 2024-01-11 18:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,11 +26,11 @@ msgstr "Erreur lors du chargement de textdomain pour le thème « efas »"
 
 #: template-parts/blocks/share-dialog/layout.php:15
 msgid "Teile unser Referendum mit deinem Umfeld!"
-msgstr "Partage notre référendum avec ton entourage !"
+msgstr "Partagez le référendum autour de vous !"
 
 #: template-parts/blocks/share-dialog/layout.php:16
 msgid "Danke, dass du dein Umfeld auf unser Referendum aufmerksam machst!"
-msgstr "Merci d’attirer l’attention de ton entourage sur notre référendum !"
+msgstr "Merci d’attirer l’attention de votre entourage sur notre référendum !"
 
 #: template-parts/blocks/share-dialog/layout.php:18
 msgid "Auf WhatsApp teilen"
