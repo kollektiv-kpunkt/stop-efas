@@ -231,3 +231,16 @@ function efas_add_custom_template_parts()
     return ob_get_clean();
 }
 add_shortcode('efas_lang', 'efas_add_custom_template_parts');
+
+
+/**
+ * Add loader class
+ */
+function efas_add_loader_class($classes)
+{
+    if (!isset($_COOKIE["efas-heroine"]) && is_front_page()) {
+        $classes[] = "efas-heroine-loader";
+    }
+    return $classes;
+}
+add_filter('body_class', 'efas_add_loader_class');

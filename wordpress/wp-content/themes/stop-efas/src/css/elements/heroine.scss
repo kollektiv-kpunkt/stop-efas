@@ -84,4 +84,52 @@
             }
         }
     }
+
+    &.efas-heroine-loader {
+        height: calc(100 * var(--vh, 1vh));
+        display: flex;
+        @apply justify-center items-center px-0 md:px-20 lg:px-32;
+
+        .efas-heroine-inner {
+            max-width: 1700px;
+        }
+
+        .efas-logo-canvas {
+            img {
+                &#hospital {
+                    width: 32%;
+                    top: 30%;
+                    left: 34%;
+                    opacity: 0;
+                }
+
+                &#hammer {
+                    width: 38%;
+                    top: 0;
+                    left: 47%;
+                    transform: rotate(78deg);
+                    transform-origin: 67% 100%;
+                    opacity: 0;
+                }
+
+                &#spark1,
+                &#spark2,
+                &#spark3 {
+                    width: 1%;
+                    top: 42%;
+                    left: 49%;
+                    opacity: 0;
+                }
+
+                &#no-de,
+                &#efas-de,
+                &#no-fr,
+                &#efas-fr,
+                &#no-it,
+                &#efas-it {
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }

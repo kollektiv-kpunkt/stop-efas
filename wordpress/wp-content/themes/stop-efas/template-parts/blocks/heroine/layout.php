@@ -6,10 +6,16 @@
  * @subpackage stop-efas
  * @since 0.1
  */
+if (!isset($_COOKIE["efas-heroine"])) {
+    $heroineclass= " efas-heroine-loader";
+    // setcookie("efas-heroine", "true", time() + (86400 * 30), "/");
+} else {
+    $heroineclass = "";
+}
 ?>
 
-<div class="efas-heroine-wrapper bg-primary py-6">
-    <div class="efas-heroine-inner px-6 max-w-[620px] mx-auto">
+<div class="efas-heroine-wrapper bg-primary<?= $heroineclass ?>">
+    <div class="efas-heroine-inner py-6 px-6 max-w-[620px] w-full mx-auto">
         <div class="efas-logo-canvas aspect-[620/415] ">
             <?php
             $elements = [
