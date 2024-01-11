@@ -187,3 +187,33 @@ add_filter('render_block', function ($blockContent, $block) {
     return preg_replace($pattern, $replacement, $blockContent);
 
 }, 10, 2);
+
+
+/**
+ * Filter the entire content for demovox form shortcode and redirect if success page language mismatch
+ *
+ * @return $content or redirect
+ *
+ * @param string $content
+ */
+
+function efas_filter_content($content)
+{
+    if (str_contains($content, '[demovox_form]') && isset($_GET["sign"])) {
+        global $wpdb;
+        $query = "SELECT * FROM {$wpdb->prefix}demovox_signatures WHERE guid = \"" . $_GET["sign"] . "\"";
+        $result = $GLOBALS['wpdb']->get_results($query);
+        $ID = get_the_ID();
+        $current_language = pll_current_language();
+        $language = $result[0]->language;
+        if ($current_language != $language) {
+            $target = get_permalink(pll_get_post($ID, $language)) . "?sign=" . $_GET["sign"];
+            wp_redirect($target);
+            exit;
+        }
+    } else {
+        return $content;
+    }
+    return $content;
+}
+add_filter('the_content', 'efas_filter_content');
