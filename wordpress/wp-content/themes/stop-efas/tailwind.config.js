@@ -1,5 +1,9 @@
 module.exports = {
     content: [
+        './*.html',
+        './inc/**/*.html',
+        './**/*.html',
+        './**/**/*.html',
         './*.php',
         './inc/**/*.php',
         './**/*.php',
