@@ -4,18 +4,18 @@ function efas_theme_support() {
     add_theme_support( 'post-thumbnails' );
     add_editor_style('gutenberg/fixes.css' );
 
-    register_nav_menus( array(
-        'primary_menu' => __( 'Primary Menu', 'efas' ),
-        'footer_menu'  => __( 'Footer Menu', 'efas' ),
-        "some_menu" => __("Social Media Menu", "efas")
-    ) );
+    // register_nav_menus( array(
+    //     'primary_menu' => __( 'Primary Menu', 'efas' ),
+    //     'footer_menu'  => __( 'Footer Menu', 'efas' ),
+    //     "some_menu" => __("Social Media Menu", "efas")
+    // ) );
 
-    // $textdomain = load_theme_textdomain( 'efas', get_template_directory() . '/languages' );
-    // if (!$textdomain) {
-    //     add_action( 'admin_notices', function() {
-    //         echo '<div class="error"><p>' . __( 'Error loading textdomain for theme "efas"', 'efas' ) . '</p></div>';
-    //     });
-    // }
+    $textdomain = load_theme_textdomain( 'efas', get_template_directory() . '/languages' );
+    if (!$textdomain) {
+        add_action( 'admin_notices', function() {
+            echo '<div class="error"><p>' . __( 'Error loading textdomain for theme "efas": ' . get_locale() . '.mo missing', 'efas' ) . '</p></div>';
+        });
+    }
 
 }
 
