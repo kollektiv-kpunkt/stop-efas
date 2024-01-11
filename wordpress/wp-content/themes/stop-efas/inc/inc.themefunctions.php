@@ -224,13 +224,13 @@ add_filter('the_content', 'efas_filter_content');
  *
  */
 
-function efas_add_custom_template_parts($content)
-{
-    $content .= get_template_part("template-parts/elements/credits");
-    ob_start();
-    get_template_part("template-parts/elements/language-switcher");
-    $langSwitcher = ob_get_clean();
-    $content =  $content . $langSwitcher;
-    return $content;
-}
-add_filter('the_content', 'efas_add_custom_template_parts');
+// function efas_add_custom_template_parts($content)
+// {
+//     $content .= get_template_part("template-parts/elements/credits");
+//     ob_start();
+//     get_template_part("template-parts/elements/language-switcher");
+//     $langSwitcher = ob_get_clean();
+//     $content =  $content . $langSwitcher;
+//     return $content;
+// }
+// add_filter('the_content', 'efas_add_custom_template_parts');
