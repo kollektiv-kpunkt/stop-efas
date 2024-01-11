@@ -8,6 +8,6 @@
     }
 
     &__lang {
-        @apply absolute h-8 w-8 rounded-full flex justify-center items-center bg-highlight text-black;
+        @apply absolute h-8 w-8 rounded-full flex justify-center items-center bg-highlight text-black no-underline;
     }
 }
