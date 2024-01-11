@@ -8,7 +8,7 @@
  */
 if (!isset($_COOKIE["efas-heroine"])) {
     $heroineclass= " efas-heroine-loader";
-    setcookie("efas-heroine", "true", time() + (86400 * 30), "/");
+    setcookie("efas-heroine", "true", time() + (86400), "/");
 } else {
     $heroineclass = "";
 }
