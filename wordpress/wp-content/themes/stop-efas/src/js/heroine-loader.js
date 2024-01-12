@@ -213,7 +213,7 @@ window.addEventListener('load', () => {
             const hash = window.location.hash;
             const element = document.querySelector(hash);
             if (element) {
-                element.scrollIntoView();
+                window.scrollTo(0, element.offsetTop - 100);
             }
         }
     }, 5000);
