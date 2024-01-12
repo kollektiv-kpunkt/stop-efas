@@ -2,7 +2,6 @@ window.addEventListener('load', () => {
     const loader = document.querySelector('.efas-heroine-wrapper.efas-heroine-loader');
     if (!loader) return;
     document.documentElement.style.overflow = "hidden";
-    window.scrollTo(0, 0);
 
     const loaderInner = loader.querySelector('.efas-heroine-inner');
     const hopsital = loader.querySelector("img#hospital");
@@ -19,6 +18,7 @@ window.addEventListener('load', () => {
     const navHeader = document.querySelector('.efas-nav-header');
 
     setTimeout(() => {
+        window.scrollTo(0, 0);
         hopsital.animate([
             { opacity: 0 },
             { opacity: 1 }
