@@ -1,7 +1,8 @@
 <?php
 $langs = [
     "de",
-    "fr"
+    "fr",
+    "it"
 ];
 ?>
 <div class="efas-language-switcher">
