@@ -209,5 +209,12 @@ window.addEventListener('load', () => {
             fill: 'forwards'
         })
         document.documentElement.style.overflow = "auto";
+        if (window.location.hash) {
+            const hash = window.location.hash;
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView();
+            }
+        }
     }, 5000);
 });
