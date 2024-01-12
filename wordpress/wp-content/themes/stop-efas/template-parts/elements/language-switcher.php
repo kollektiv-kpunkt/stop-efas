@@ -1,7 +1,8 @@
 <?php
-$langs = pll_languages_list( [
-    'hide_empty' => 1
-] );
+$langs = [
+    "de",
+    "fr"
+]
 ?>
 <div class="efas-language-switcher">
     <?php foreach($langs as $lang): ?>
