@@ -4,6 +4,10 @@ $langs = [
     "fr",
     "it"
 ];
+$current_lang = pll_current_language();
+if (($key = array_search($current_lang, $langs)) !== false) {
+    unset($langs[$key]);
+}
 ?>
 <div class="efas-language-switcher">
     <?php foreach($langs as $lang): ?>
@@ -11,7 +15,7 @@ $langs = [
             <?= $lang ?>
         </a>
     <?php endforeach; ?>
-    <span class="material-symbols-outlined">
-        language
+    <span>
+        <?= $current_lang ?>
     </span>
 </div>
