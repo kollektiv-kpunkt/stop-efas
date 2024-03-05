@@ -4,7 +4,7 @@
     @apply fixed bottom-4 right-4 h-8 w-8;
 
     &__curent-lang {
-        @apply text-2xl leading-none absolute z-50 bg-primary text-white w-8 h-8 flex justify-center items-center rounded-full cursor-pointer;
+        @apply leading-none absolute z-50 bg-primary text-white w-8 h-8 flex justify-center items-center rounded-full cursor-pointer;
     }
 
     &__lang {
