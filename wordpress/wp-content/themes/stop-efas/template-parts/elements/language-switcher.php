@@ -15,7 +15,7 @@ if (($key = array_search($current_lang, $langs)) !== false) {
             <?= $lang ?>
         </a>
     <?php endforeach; ?>
-    <span>
+    <span class="efas-language-switcher__curent-lang">
         <?= $current_lang ?>
     </span>
 </div>
